@@ -4,12 +4,68 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>TIC TAK TOE</title>
-     <link rel="stylesheet" href="./style/style.css" />
-</head>
+     <link rel="stylesheet" href="./public/style/style.css" />
 
-<body>
-     <h1>SUCCESSFULL</h1>
+     <!-- fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght,BNCE,INFM,SPAC@1,700,35,20,3.6&display=swap" rel="stylesheet"></head>
+
+<body class="shantell-sans-fonts">
+     <section class="hero">
+          <h1 class="heading glow">Tic Tak Toe <br/> Game</h1>
+     </section>
      
-     <script src="../src/index.js"></script>
+     <section class="container">
+          <div class="game-grid">
+               <div class="inner-column border-top border-left">
+                    <h1 class="symbols" id="block1">0</h1>
+               </div>
+
+               <div class="inner-column border-top border-left" >
+                    <h1 class="symbols" id="block2">0</h1>
+               </div>
+
+               <div class="inner-column border-top border-left border-right">
+                    <h1 class="symbols" id="block3">0</h1>
+               </div>
+               
+               <div class="inner-column border-top border-left">
+                    <h1 class="symbols" id="block4">0</h1>
+               </div>
+               
+               <div class="inner-column border-top border-left">
+                    <h1 class="symbols" id="block5">0</h1>
+               </div>
+               
+               <div class=" inner-column border-top border-left border-right">
+                    <h1 class="symbols " id="block6">0</h1>
+               </div>
+               
+               <div class="inner-column border-top border-bottom border-left">
+                    <h1 class="symbols" id="block7">0</h1> 
+               </div>
+               
+               <div class="inner-column border-top border-bottom border-left">
+                    <h1 class="symbols" id="block8">X</h1>
+               </div>
+               
+               <div class="inner-column border-top border-bottom border-left border-right">
+                    <h1 class="symbols" id="block9">X</h1>
+               </div>
+          </div>
+     </section>
+
+     <section class="playerinfo">
+          <div class="info">
+               <h3 class="glow player">Player 1 :<span class="score">0</span></h3> 
+               <h3 class="glow player">Player 2 :<span class="score">0</span></h3>
+          </div>
+    </section>
+
+    
+
+
+     <script src="./src/index.js"></script>
 </body>
 </html>
