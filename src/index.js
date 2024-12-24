@@ -1,20 +1,27 @@
 // animation and box click logic
 var blocks  = document.querySelectorAll(".inner-column");
+let turn0 = true ;
 
-function playSound(){
+function animation(block){
      var audio = new Audio("./public/assets/green.mp3")
      audio.play();
+     block.classList.add("clicked");         
+     setTimeout(()=>{
+          block.classList.remove("clicked");
+     },170)
 }
 
 blocks.forEach(block=>
      block.addEventListener("click",()=>{
-          playSound();
-          block.classList.add("clicked");         
-          console.log(this);
-          
-          setTimeout(()=>{
-               block.classList.remove("clicked");
-          },170)
+     if(turn0){
+          block.firstElementChild.innerHTML = 'O';
+          turn0=false; 
+     }else{
+          block.firstElementChild.innerHTML = 'X'
+          turn0 = true;  
+     }
+          block.disabled = true
+          animation(block);  
      })
 )
 
@@ -35,8 +42,5 @@ const winningPattern = [
      [3,5,7]
 ]
 
-function checkAnswer(){
-
-}
 
 

@@ -111,3 +111,17 @@ body{
      color: #272525;
      background-color: #ffffff;
 }
+
+
+footer{
+
+     position: absolute;
+     top: 95%;
+     width: 100%;
+}
+
+footer > p {
+     text-align: center;
+     color: #414141;
+     font-size: small;
+}
