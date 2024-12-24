@@ -22,6 +22,7 @@ blocks.forEach(block=>
      }
           block.disabled = true
           animation(block);  
+          checkAnswer();
      })
 )
 
@@ -43,4 +44,9 @@ const winningPattern = [
 ]
 
 
+const checkAnswer = () =>{
+     for (pattern of winningPattern){
+          console.log(pattern);
+     }
+}
 
