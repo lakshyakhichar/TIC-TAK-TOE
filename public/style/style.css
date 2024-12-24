@@ -101,3 +101,13 @@ body{
 .score{
      padding-left: 4vw;
 }
+
+.reset-btn{
+     margin-top: 30px;
+     padding: 3px 50px;
+     font-size: larger;
+     border-radius: 20px;
+     font-weight: bold;
+     color: #272525;
+     background-color: #ffffff;
+}
